@@ -1,0 +1,90 @@
+// index.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Fabio Roberto Garcia Nunes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com título e navegação -->
+    <header>
+        <h1>Fabio Roberto Garcia Nunes</h1>
+        <!-- Menu de navegação para as seções -->
+        <nav>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Sobre mim -->
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou Engenheiro Civil formado pela Universidade Federal do Amazonas (UFAM). 
+                Possuo mestrado pela Universidade Federal do Ceará (UFC), bacharelado em Direito pela 
+                Universidade do Sul de Santa Catarina (UNISUL) e atualmente atuo como Assessor no 
+                Tribunal Regional Eleitoral do Amazonas (TRE-AM).
+            </p>
+        </section>
+
+        <!-- Seção Formação acadêmica -->
+        <section id="formacao">
+            <h2>Formação</h2>
+            <ul>
+                <li>Engenharia Civil - Universidade Federal do Amazonas (UFAM)</li>
+                <li>Mestrado - Universidade Federal do Ceará (UFC)</li>
+                <li>Bacharelado em Direito - Universidade do Sul de Santa Catarina (UNISUL)</li>
+                <li>Graduação em Ciência de Dados - UNINTER (em andamento)</li>
+                <li>Graduação em Educação Física - UNINTER (em andamento)</li>
+            </ul>
+        </section>
+
+        <!-- Seção Portfólio com cards clicáveis -->
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <div class="cards-container">
+                <!-- Card 1: Artigo Revista Transportes -->
+                <a href="https://transportes.anpet.org.br/anpet/article/view/71" class="card">
+                    <img src="artigo 1.png" alt="Artigo Revista Transportes (2009)">
+                    <h3>Artigo Revista Transportes (2009)</h3>
+                    <p>Artigo acadêmico publicado na Revista Transportes em 2009.</p>
+                </a>
+                <!-- Card 2: Dissertação Mestrado -->
+                <a href="https://repositorio.ufc.br/handle/riufc/4873" class="card">
+                    <img src="artigo 2.png" alt="Dissertação Mestrado UFC (2006)">
+                    <h3>Dissertação Mestrado UFC (2006)</h3>
+                    <p>Dissertação de mestrado defendida na Universidade Federal do Ceará em 2006.</p>
+                </a>
+                <!-- Card 3: Artigo Revista Cerâmica -->
+                <a href="https://www.researchgate.net/scientific-contributions/F-R-G-Nunes-2023715381" class="card">
+                    <img src="artigo 3.png" alt="Artigo Revista Cerâmica (2009)">
+                    <h3>Artigo Revista Cerâmica (2009)</h3>
+                    <p>Artigo acadêmico publicado na Revista Cerâmica em 2009.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção Contato com formulário -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Seu nome" required>
+                <input type="email" id="email" placeholder="Seu email" required>
+                <textarea id="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <!-- Div para mensagens de erro/sucesso -->
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
