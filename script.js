@@ -1,4 +1,4 @@
-// Inicialização do EmailJS - substitua 'YOUR_PUBLIC_KEY' pela sua chave pública do EmailJS
+// Inicialização do EmailJS
 emailjs.init('6wQtcJOL6DBOOxdqB');
 
 // Adiciona event listener ao formulário de contato
